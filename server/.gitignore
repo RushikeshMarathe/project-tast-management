@@ -1,0 +1,7 @@
+# .gitignore (both for frontend and backend)
+
+node_modules/
+.env
+build/
+dist/
+*.log
