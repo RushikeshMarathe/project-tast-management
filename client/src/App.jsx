@@ -7,28 +7,20 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+   <div className='flex flex-col gap-16 w-full h-screen items-center justify-center border border-double border-red-400 border-t-8 border-l-8 border-b-0 border-r-0'>
+    
+    {/* Authentication Dashboard */}
+    <div className='text-red-400 text-6xl font-bold  '>
+    <h1 className='text-center border-double border-b-8 border-r-8 border-t-0 border-l-0 p-7 '>Project Tracking Application</h1>
+    </div>
+
+    <div className='flex justify-center gap-12'>
+      <button className='px-10 py-3 border border-rose-700 hover:text-xl hover:border-white bg-pink-900 rounded-2xl text-white transition-all'>Sign Up</button>
+      <button className='px-10 py-3 border border-rose-700 hover:text-xl hover:border-white bg-pink-900 rounded-2xl text-white transition-all'>Log In</button>
+
+    </div>
+    
+   </div>
   )
 }
 
